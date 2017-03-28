@@ -11,12 +11,12 @@ Selenium 2 (WebDriver) library for Robot Framework
 Introduction
 ------------
 
-Selenium2Library is a web testing library for `Robot Framework`_
-that leverages the `Selenium 2 (WebDriver)`_ libraries from the
-Selenium_ project.
+Selenium2Library was forked from SeleniumLibrary_ library
+that leverages `Selenium 2 (WebDriver)`_ libraries from
+Selenium_.
 
-It is modeled after (and forked from) the SeleniumLibrary_ library,
-but re-implemented to use Selenium 2 and WebDriver technologies.
+Selenium2Library is modeled after (and forked from) the SeleniumLibrary_ library,
+to re-implement features using Selenium 2 and WebDriver technologies.
 
 - More information about this library can be found on the Wiki_ and in the `Keyword Documentation`_.
 - Installation information is found in the `INSTALL.rst`_ file.
@@ -34,16 +34,16 @@ The recommended installation method is using
 
     pip install robotframework-selenium2library
 
-The main benefit of using ``pip`` is that it automatically installs all
-dependencies needed by the library. Other nice features are easy upgrading
+The main benefit of using ``pip`` is the automatic installation of all
+dependencies needed by the library. Other nice features are ease of upgrading
 and support for un-installation::
 
     pip install --upgrade robotframework-selenium2library
     pip uninstall robotframework-selenium2library
 
-Notice that using ``--upgrade`` above updates both the library and all
-its dependencies to the latest version. If you want, you can also install
-a specific version or upgrade only the Selenium tool used by the library::
+Notice that using ``--upgrade`` above updates the library and all
+its dependencies to the latest version. You can additionally install
+a specific version or only upgrade the Selenium tool used by the library::
 
     pip install robotframework-selenium2library==1.4.1
     pip install --upgrade selenium
@@ -52,11 +52,11 @@ a specific version or upgrade only the Selenium tool used by the library::
 Proxy configuration
 '''''''''''''''''''
 
-If you are behind a proxy, you can use ``--proxy`` command line option
+If you are behind a proxy, you can use the ``--proxy`` command line option
 or set ``http_proxy`` and/or ``https_proxy`` environment variables to
 configure ``pip`` to use it. If you are behind an authenticating NTLM proxy,
 you may want to consider installing `CNTML <http://cntlm.sourceforge.net>`__
-to handle communicating with it.
+to handle communication.
 
 For more information about ``--proxy`` option and using pip with proxies
 in general see:
@@ -68,9 +68,9 @@ in general see:
 Manual installation
 '''''''''''''''''''
 
-If you do not have network connection or cannot make proxy to work, you need
-to resort to manual installation. This requires installing both the library
-and its dependencies yourself.
+If you do not have network connection or cannot make the proxy to work, you need
+to perform manual installation. Both the library and its dependencies must be installed
+by yourself.
 
 1) Make sure you have `Robot Framework installed
    <http://code.google.com/p/robotframework/wiki/Installation>`__.
@@ -84,15 +84,15 @@ and its dependencies yourself.
 
 3) Extract each source distribution to a temporary location.
 
-4) Go each created directory from the command line and install each project
+4) Go to each created directory from the command line and install each project
    using::
 
        python setup.py install
 
-If you are on Windows, and there are Windows installers available for
-certain projects, you can use them instead of source distributions.
-Just download 32bit or 64bit installer depending on your system,
-double-click it, and follow the instructions.
+If you are on Windows, and there are  available for certain projects, you can use
+Windows installers instead of source distributions if available.
+Just download the 32bit or 64bit installer for your system, double-click it,
+and follow the instructions.
 
 Directory Layout
 ----------------
